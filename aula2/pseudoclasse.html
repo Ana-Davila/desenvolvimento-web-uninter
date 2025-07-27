@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoclasses</title>
+    <style>
+        a:link{ /*o link sem estar visitado será vermelho*/
+            color: red;
+        }
+        a:visited{ /*o Link visitado será azul*/
+            color: blue;
+        }
+        a{ /* é necessario transformar o link em bloco e adicionar uma transição para ficae suave*/
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: lightslategray;
+            color: black;
+            text-decoration: underline;
+            transition: all 0.3s ease;
+        }
+        a:hover{ /*ao passar o mouse por cima do link ele ficará*/
+            transform: translateY(-5px);
+            background-color: blue;
+            color: pink;
+            text-decoration: none;
+        }
+        a:active{ /*ao clicar no link a cor da letra ficará verde*/
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>pseudoclasses</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime excepturi porro repellendus libero saepe perspiciatis consequatur ea vero? Itaque ipsa minus beatae voluptatibus hic totam earum molestias facere suscipit vitae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum ipsam, doloremque repudiandae numquam soluta voluptates repellendus illum recusandae maiores, nemo dolor error quaerat ea unde modi aperiam! Qui minus voluptas earum dolorum voluptates deserunt nihil et ab autem, enim quam, mollitia magnam quae. Omnis non praesentium quasi dolorem quos tempore incidunt eaque labore repellendus officia, aliquam corrupti magnam ullam iste ab enim a expedita asperiores laboriosam accusamus eos similique. Totam est aperiam nemo illo optio facilis dolor excepturi ullam delectus voluptatum ipsa, rem quidem quisquam autem? Distinctio ratione ea numquam facere debitis aspernatur quasi culpa error ab, a veniam aliquam!</p>
+    <a href="#">Saiba mais</a>
+</body>
+</html>

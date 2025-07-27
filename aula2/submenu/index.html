@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submenu</title>
+    <style>
+        ul{
+            list-style-type: none;/*Tirando a decoração da lista*/
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            width: 150px;
+        }
+        ul li{ /**/
+            position: relative;
+        }
+
+        li ul{
+            position: absolute;
+            left: 149px;
+            top: 0;
+            display: none; /*Deixa o submenu invisível*/
+        }
+        ul li a{
+            display: block;
+            text-decoration: none;
+            color: #e2144a;
+            background-color: #fff;
+            padding: 5px;
+            border: 1px solid #ccc;
+
+        }
+        ul li a:hover{
+            text-decoration: underline;
+            font-weight: bold;
+            background-color: #ccc;
+        }
+        /*Exibir o submenu*/
+        li:hover ul{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Submenus</h1>
+    <ul>
+        <li> <a href="#">Home</a>
+            <ul>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Nossas lojas</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Notícias</a></li>
+        <li><a href="#">Contato</a></li>
+    </ul>
+</body>
+</html>

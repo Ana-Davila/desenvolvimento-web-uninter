@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoelementos</title>
+    <style>
+        h1::after{
+            content: "(fim)";
+        }
+        h1::before{
+            content: "(Inicio)";
+        }
+        p::first-letter{ /*A primeira letra ficrá vermelha e com fonte extra larga*/
+            color: red;
+            font-size: xx-large;
+        }
+        p::first-line{ /*neste exemplo a cor das letras da primeira linha ficará azul com a fonte bem pequena*/
+            color: blue;
+            font-variant: small-caps;
+        }
+        ::selection{ /* Neste exemplo ao usuário selecionar um determinado intervalo de palavras, estas palavras ficarão em vermelho com fundo amarelo*/
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudoelementos</h1>
+
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro eligendi exercitationem aliquam laborum deleniti sint ad magni sunt temporibus quasi repudiandae eius deserunt illum est atque distinctio, vel officia harum sed nobis tenetur quae eum! Laudantium quasi magni labore nostrum. Magni minus natus esse libero fuga ducimus praesentium totam iure dignissimos, adipisci sint obcaecati ut expedita dolores autem beatae consequuntur voluptate odio rem numquam deserunt vero. Ipsum sunt quas quisquam, animi, dignissimos at debitis quod temporibus facere molestiae illo! Voluptatum tenetur quaerat facere nam alias placeat laboriosam corporis, aperiam sed! Laudantium repellendus possimus a sunt fugiat iusto libero magni autem, reprehenderit soluta vitae quibusdam accusantium ratione? Alias, sint exercitationem assumenda temporibus voluptates nobis minus velit laborum? Ducimus fugit quibusdam consectetur cumque minima mollitia doloremque delectus reiciendis accusantium sequi architecto pariatur ut magnam earum amet, adipisci itaque soluta in incidunt quis quae repudiandae! Culpa accusantium modi quaerat. Error ab itaque tenetur?</p>
+    
+
+    <a href="#">Clique aqui e saiba mais</a>
+</body>
+</html>
